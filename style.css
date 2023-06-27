@@ -1,0 +1,368 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#page {
+    background-color: aqua;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    margin-bottom: 2rem;
+    box-shadow: 0.7rem 0.7rem 0.5rem rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, rgba(8, 5, 31, 1), rgba(8, 5, 31, 0.39)), url(abstract3.jpg );
+    background-size: cover;
+
+}
+
+.nav {
+    text-align: center;
+    background-color: #08042c;
+    height: 10rem;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 6.8rem, 0 100%);
+    border-bottom: 1rem white;
+}
+
+span {
+    transform: rotate(45deg);
+}
+
+.hack {
+    display: block;
+    animation-name: left;
+    animation-duration: 1s;
+
+    letter-spacing: 0.8rem;
+
+}
+
+.od {
+    display: block;
+    animation-name: right;
+    animation-duration: 1s;
+    letter-spacing: 0.8rem;
+
+}
+
+@media (max-width:370px) {
+    .hack {
+        letter-spacing: 0rem;
+    }
+
+    .od {
+        letter-spacing: 0rem;
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+h1 {
+    color: white;
+    margin-top: 30px;
+    position: relative;
+    top: 20%;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    font-family: lato;
+}
+
+.in {
+    background-image: url(ho-1.png);
+    background-size: cover;
+    height: 20rem;
+    position: relative;
+    top: 5rem;
+    width: 20rem;
+    margin: auto;
+    border: 1.5rem solid black;
+    border-radius: 50%;
+    box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(177, 17, 129, 0.5);
+    /* transform: rotateY(180deg); */
+}
+
+
+
+
+@media (max-width:650px) {
+    .in {
+        height: 15rem;
+        width: 15rem;
+        border: 1.2rem solid black;
+    }
+}
+
+@media (max-width:470px) {
+    .in {
+        height: 10rem;
+        width: 10rem;
+        border: 1.1rem solid black;
+    }
+}
+
+@media (max-width:340px) {
+    .in {
+        height: 6.7rem;
+        width: 6.7rem;
+        border: 0.8rem solid black;
+    }
+}
+
+
+
+.content {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 12rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: lato;
+    color: rgb(199, 209, 218);
+}
+
+@media (max-width:650px) {
+    .content {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:470px) {
+    .content {
+        font-size: 0.99rem;
+    }
+}
+
+@media (max-width:340px) {
+    .content {
+        font-size: 0.6rem;
+    }
+}
+
+.btn {
+    margin-top: 4rem;
+    text-align: center;
+
+}
+
+button {
+    cursor: pointer;
+    background-color: rgba(177, 17, 129, 0.5);
+    padding: 0.8rem 0.6rem 0.8rem 0.6rem;
+    font-size: 1.5rem;
+    border-radius: 0.6rem;
+    border-color: #08042c;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: rgba(177, 17, 129, 0.435);
+
+}
+
+.offers {
+    text-align: center;
+    font-family: lato;
+    color: white;
+}
+
+.prizes {
+
+    margin-top: 3rem;
+    height: 10rem;
+
+}
+
+a {
+    font-family: lato;
+    color: white;
+
+}
+
+.prizes img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1%;
+}
+
+.prizes h1 {
+    color: brown;
+    font-family: lato;
+    color: white;
+}
+
+.rules {
+
+    margin-top: 3rem;
+    height: 10rem;
+
+}
+
+.rules img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    float: right;
+    margin-left: 1%;
+}
+
+.rules h1 {
+    color: brown;
+    font-family: lato;
+    color: white;
+}
+
+.theme {
+    margin-top: 3rem;
+    height: 10rem;
+}
+
+.theme img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    float: left;
+    margin-left: 1%;
+}
+
+.theme h1 {
+    color: brown;
+    font-family: lato;
+    color: white;
+}
+
+@media (max-width:790px) {
+    .offers img {
+        margin-top: 2.5%;
+    }
+
+    .theme h1 {
+        font-size: 1.1rem;
+    }
+
+    .theme img {
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+    .prizes h1 {
+        font-size: 1.1rem;
+    }
+
+    .prizes img {
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+    .rules h1 {
+        font-size: 1.1rem;
+    }
+
+    .rules img {
+        height: 8rem;
+        width: 8rem;
+
+    }
+
+}
+
+@media (max-width:390px) {
+    .offers a {
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+
+    .theme h1 {
+        font-size: 0.7rem;
+    }
+
+    .theme img {
+        height: 5rem;
+        width: 5rem;
+        margin-top: 7.5%;
+
+
+    }
+
+    .prizes h1 {
+        font-size: 0.7rem;
+    }
+
+    .prizes img {
+        height: 5rem;
+        width: 5rem;
+        margin-top: 7.5%;
+
+    }
+
+    .rules h1 {
+        font-size: 0.7rem;
+    }
+
+    .rules img {
+        height: 5rem;
+        width: 5rem;
+        margin-top: 7.5%;
+    }
+
+}
+
+footer {
+    margin-top: 10%;
+    padding-bottom: 3rem;
+
+    text-align: center;
+}
+
+.contact img {
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    font-weight: bolder;
+}
+
+@media (max-width:450px) {
+    .contact img {
+        height: 2rem;
+        width: 2rem;
+    }
+}
